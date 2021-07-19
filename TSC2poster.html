@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<meta name='description' content=''>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<style>
+.panel-default > .panel-custom-title {
+    background: #6EA498; color: #00372B;
+}
+h3 {
+margin-top:0px;
+}
+
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (image) */
+  .modal-content {
+    margin: auto;
+    padding: 20px;
+    display: block;
+    width: 90%;
+    max-width: 1000px;
+  }
+  
+  
+  /* The Close Button */
+.close {
+  color: #00372B;
+  float: right;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
+
+.parent {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(2, 1fr);
+grid-column-gap: 100px;
+grid-row-gap: 100px;
+background: white; color: #00372B;
+}
+
+.div1 { grid-area: 1 / 2 / 3 / 3; }
+.div2 { grid-area: 1 / 1 / 2 / 2; }
+.div3 { grid-area: 2 / 1 / 3 / 2; }
+.div4 { grid-area: 1 / 3 / 2 / 4; }
+.div5 { grid-area: 2 / 3 / 3 / 4; }
+
+</style>
+
+<title>The WINE collaboration: Unveiling long-period planets with TESS</title>
+
+</head>
+
+<body style="background-color:#BFDDD7">
+<div class='container' style='margin-top:20px'>
+  <div class='row'>
+    <div class='col-sm-12'>
+      <div class='panel panel-default'>
+        <div class='panel-body panel-custom-title'>
+          <h1 class='text-center'>The WINE collaboration:<br />Unveiling long-period planets with TESS</h1>
+          <p class='text-center'>Rafael Brahm<sup>1,3</sup>, Nestor Espinoza<sup>4</sup>, Thomas Henning<sup>5</sup>, Melissa J. Hobson<a href="https://orcid.org/0000-0002-5945-7975" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;" alt="ORCID iD icon"></a><sup>1,2</sup>, Andres Jordán<sup>1,3</sup>, Diana Kossakowski<sup>5</sup>, Felipe Rojas<sup>1,2</sup>, Paula Sarkis<sup>5</sup>, Martin Schlecker<sup>5</sup>, Marcelo Tala<sup>1,3</sup>, Trifon Trifonov<sup>5</sup></p>
+          <p class='text-center small'>1. Millennium Institute for Astrophysics, Chile; 2. Instituto de Astrofísica, Pontificia Universidad Católica de Chile; 3. Facultad de Ingeniería y Ciencias, Universidad Adolfo Ibáñez, Chile; 4. Space Telescope Science Institute, USA; 5. Max-Planck-Institut für Astronomie, Heidelberg, Germany</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<div class="row">
+  <div class="col-sm-4">
+    <div class='panel panel-default'>
+      <div class='panel-body'>
+        <div> 
+        <h3 class='text-center' style="color:#00372B;">Photometric follow-up</h3>
+        <p><img class ="myImages" src='fito600_full.png' width='100%' height='auto' id="Btn" alt="A full transit observed with FITO600."></p>
+          <p style="color:#00372B;"><em>Click to learn more about our photometric follow-up!</em></p>
+
+          <!-- The Modal -->
+          <div id="myModal" class="modal modal_multi">
+            <div class="modal-content">
+            <span class="close close_multi">&times;</span>
+            <h3 style="color:#00372B;">Photometric follow-up</h3>
+            <p>The large TESS pixel size (21”) allows for nearby companions to contaminate photometry, leading to false positives. Ground-based photometric follow-up allows us to check the transit is on-target, and increase the number and timeline of observed transits. <br />
+            We use a network of telescopes including:<br />
+            <ul>
+              <li>HATSouth network, with sites at Las Campanas Observatory, Chile; HESS site, Namibia; and Siding Spring Observatory, Australia.</li>
+              <li>LCOGT network, with sites at Cerro Tololo, Chile; SAAO, South Africa; and Siding Spring Observatory, Australia.</li>
+              <li>FITO600 at El Sauce, Chile.</li>
+            </ul>
+            We highlight here FITO600, a new 60-cm telescope at El Sauce observatory. Reaching a precision of 2000 ppm for Vmag=10-14 with exposure times of 5-120s, FITO600 is a valuable addition to our photometric follow-up capability.
+            </p>
+            <p><img src='fito600_full.png' width='48%' height='auto' id="Fig2" alt="A full transit observed with FITO600."> <img src='fito600_ingress.png' width='48%' height='auto' id="Fig3" alt="An ingress transit observed with FITO600."></p>
+            <p><em>A full transit (left) and an ingress (right) observed with FITO600. The vertical black dashed lines marked the expected ingress and egress times.</em></p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class='panel panel-default'>
+      <div class='panel-body'>
+        <div> 
+          <h3 class='text-center' style="color:#00372B;">Radial velocity follow-up</h3>
+          <p><img class ="myImages" src='full_model_tess_ngts_allrv_justrvmodel_residuals_minupdate.png' width='100%' height='auto' id="Btn" alt="Radial velocities for TOI-201."></p>
+          <p style="color:#00372B;"><em>Click to learn more about our radial velocity follow-up!</em></p>
+
+          <!-- The Modal -->
+          <div id="myModal" class="modal modal_multi">
+            <div class="modal-content">
+            <span class="close close_multi">&times;</span>
+            <h3 style="color:#00372B;">Radial velocity</h3>
+            <p>Radial velocity follow-up of TESS candidates allows for rapid identification of eclipsing binaries, confirmation of transiting planet candidates and determination of their masses, and the study of stellar activity via activity indicator indicators. <br />
+            We use several facilities including:<br />
+            <ul>
+              <li>HARPS @ La Silla</li>
+              <li>FEROS @ La Silla</li>
+              <li>CHIRON @ CTIO</li>
+              <li>PFS @ Las Campanas</li>
+            </ul>
+            For both FEROS and HARPS, we are part of time-sharing agreements with other planet-hunting groups. This enables us to perform a more uniform follow-up and optimise the phase coverage of our radial velocities.
+            </p>
+            <p>We process much of the spectroscopic data we obtain with our own pipeline, CERES (Brahm et al. 2017). In addition to radial velocities, this pipeline computes several activity indicators, allowing us to discriminate between planetary and activity scenarios.</p>
+            <p><img src='full_model_tess_ngts_allrv_justrvmodel_residuals_minupdate.png' width='80%' height='auto' id="Fig5" alt="Radial velocities for TOI-201."> </p>
+            <p><em>Radial velocities for TOI-201, from our own HARPS and FEROS follow-up and MINERVA and CORALIE collaboration, enabled us to confirm a warm Jupiter around this young, active star (Hobson et al. 2020).</em></p>
+            </div>
+          </div>
+          
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class='panel panel-default'>
+      <div class='panel-body'>
+        <center><img src="wine_transparent.png" style='height: auto; width: 100%;'/></center>
+        <p style="color:#00372B;">Giant, long-period exoplanets are vital to unveiling the underlying physics of planet formation and evolution. They are true relics of the planet formation process, maintaining their orbital and compositional properties, and their radii evolve without external irradiation, providing rich and unique data for planet evolution models. </p>
+        <p style="color:#00372B;">We present the Warm gIaNts with tEss collaboration (WINE), which is at the forefront of detecting, confirming, and characterizing transiting long-period giant exoplanets from TESS. Our systematic search has given rise to hundreds of transiting giant candidates with periods of 10 to hundreds of days, which is considerably enhancing and complementing the scientific output of the TESS mission. </p>
+        <p style="color:#00372B;">We introduce our efficient ground-based photometric and radial-velocity follow-up, which has helped confirm several tens of these candidates, including some of the most eccentric transiting long-period planets discovered to date, which are excellent candidates for future characterization studies.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+  <div class='panel panel-default'>
+    <div class='panel-body'>
+      <div> <h3 class='text-center' style="color:#00372B;">Transiting giant candidates</h3>
+      <p><img class ="myImages" src='P108_masked.png' width='100%' height='auto' id="Btn" alt="A sample of our candidates."></p>
+        <p style="color:#00372B;"><em>Click to learn more about the search for new candidates!</em></p>
+          <!-- The Modal -->
+          <div id="myModal" class="modal modal_multi">
+            <div class="modal-content">
+            <span class="close close_multi">&times;</span>
+            <h3 style="color:#00372B;">Transiting giant candidates</h3>
+            <p>We search for warm Jupiter candidates in the full-frame images using our own TESSERACT pipeline (Rojas et al. in prep., available on github). TESSERACT receives any TIC ID or coordinate as input and performs simple aperture photometry on the FFIs. To identify warm Jupiters, we then apply a simple algorithm that searches the light curve for zones that deviate significantly and negatively from the median flux. Finally, we check by visual inspection if these zones are consistent with a transit-like feature. This procedure notably allows us to identifiy single transiters in a sector, which is vital to the search for warm Jupiters in the 28-day TESS sectors.</p>
+            <p>Our focus is on candidates with sizes R<sub>P</sub> > 0.5 R<sub>J</sub> and periods P > 8 days, orbiting bright stars to enable their confirmation and characterization through photometry and spectroscopy. We track and prioritize all our candidates through an internal shared database, allowing us to effectively coordinate our follow-up efforts.</p>
+            <p><img src='P108_masked.png' width='100%' height='auto' alt="A sample of our candidates."></p>
+            <p><em>Period-radius diagram location (left), phase-folded radial velocity curves (centre) and phase-folded TESS light curves (right) for four of our current top-priority candidates for follow-up.</em></p>
+      </div>
+    </div>
+      </div>
+    </div>
+  </div>
+      <div class='panel panel-default'>
+      <div class='panel-body'>
+        <div> <h3 class='text-center' style="color:#00372B;">An eccentric warm Jupiter</h3>
+        <p><img class ="myImages" src='periodEcc.png' width='100%' height='auto' id="Btn" alt="period-eccentricity diagram highlighting TIC 237913194b."></p>
+        <p style="color:#00372B;"><em>Click to learn more about this planet!</em></p>
+          <!-- The Modal -->
+          <div id="myModal" class="modal modal_multi">
+            <div class="modal-content">
+            <span class="close close_multi">&times;</span>
+            <h3 style="color:#00372B;">An eccentric warm Jupiter</h3>
+            <p>Unlike Hot Jupiters, whose orbits are altered by tidal interactions, warm Jupiters preserve a record of their formation and migration history in their orbital parameters. They thus provide valuable constraints to giant planet formation models.</p>
+            <p>One of our most recent and interesting discoveries is TIC 237913194b (Schlecker et al. 2020), a 15.17d period warm Jupiter (mass 1.94 <span>&#177;</span> 00.1 M<sub>J</sub>, radius 1.24 <span>&#177;</span> 0.15 R<sub>J</sub>). It orbits a G-type star, similar to the Sun, with an eccentricity of 0.58. This is one of the most eccentric orbits of all known warm giants, as shown in the period-eccentricity diagram below.</p> 
+            <p>The high eccentricity points to a past interaction with an additional, undetected massive companion. Given the slow tidal dissipation timescale found, the planet is not a future hot Jupiter in a high-eccentricity migration phase. TIC 237913194b is an attractive candidate for atmospheric characterization studies, as its atmosphere might harbor observable chemical disequilibrium processes due to the greatly varying external forcing.</p>
+            <p><img src='phasedRV_FEROS.png' width='48%' height='auto' alt="period-eccentricity diagram highlighting TIC 237913194b."> <img src='periodEcc.png' width='48%' height='auto' alt="period-eccentricity diagram highlighting TIC 237913194b.">
+            </p>
+            <p ><em>Left: phase-folded FEROS radial velocities for TIC 237913194b. Right: period vs eccentricity for transiting exoplanets with periods of 1-100 d and measured eccentricity from the TEPCat catalog (Southworth 2011). TIC 237913194b occupies the 98th percentile in this population.</em></p>
+            <video width='70%' height="auto" controls autoplay loop>
+            <source src="orbitVis.mp4" type="video/mp4" >
+            </video>
+            <p ><em>This animation shows the radial velocity curve and light curve for the TIC 237913194 system.</em></p>
+          </div>
+      </div>
+    </div>
+      </div>
+    </div>
+
+</div>
+
+<div class="row">
+  <div class="col-sm-12">
+    <div class='panel panel-default'>
+      <div class='panel-body'>
+        <div> <h3 style="color:#00372B;"><small>References</small></h3>
+          <p><small>
+          <ul>
+            <li>Brahm, R., et al. PASP, 129, 034002</li>
+            <li>Hobson, M. J., et al. 2021, AJ, 161, 235</li>
+            <li>Rojas, F., et al. in prep.</li>
+            <li>Schlecker, M., et al. 2020, AJ, 160, 275</li>
+            <li>Southworth J. 2011, MNRAS, 417, 2166</li>
+          </ul></small>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script>
+// create references to the modal...
+var modalparent = document.getElementsByClassName('modal_multi');
+// to all images -- note I'm using a class!
+var images = document.getElementsByClassName('myImages');
+
+var span_close_multi = document.getElementsByClassName("close_multi");
+
+        // When the user clicks the button, open the modal
+        function setDataIndex() {
+
+            for (i = 0; i < images.length; i++)
+            {
+                images[i].setAttribute('data-index', i);
+                modalparent[i].setAttribute('data-index', i);
+                span_close_multi[i].setAttribute('data-index', i);
+            }
+        }
+
+
+
+        for (i = 0; i < images.length; i++)
+        {
+            images[i].onclick = function() {
+                var ElementIndex = this.getAttribute('data-index');
+                modalparent[ElementIndex].style.display = "block";
+            };
+
+            // When the user clicks on <span> (x), close the modal
+            span_close_multi[i].onclick = function() {
+                var ElementIndex = this.getAttribute('data-index');
+                modalparent[ElementIndex].style.display = "none";
+            };
+
+        }
+
+        window.onload = function() {
+
+            setDataIndex();
+        };
+
+        window.onclick = function(event) {
+            if (event.target === modalparent[event.target.getAttribute('data-index')]) {
+                modalparent[event.target.getAttribute('data-index')].style.display = "none";
+            }
+
+            // OLD CODE
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        };
+// Get the modal
+
+        var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+        var imgs = document.getElementById("Btn");
+
+// Get the <span> element that closes the modal
+        var span = modal.getElementsByClassName("close")[0]; // Modified by dsones uk
+
+// When the user clicks on the button, open the modal
+
+        imgs.onclick = function() {
+
+            modal.style.display = "block";
+        }
+
+// When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+
+
+</script>
+
+
+
+
+
+</body>
+</html>
